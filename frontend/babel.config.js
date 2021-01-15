@@ -5,5 +5,8 @@ module.exports =  {
 
         '@babel/preset-react' // Entende o html dentro do JS e converter de
                             //maneira que o browser entenda. 
+    ],
+    plugins: [
+        '@babel/plugin-transform-runtime'
     ]
 }
