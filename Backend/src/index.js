@@ -1,8 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 const { validate, v4 } = require('uuid');
 
 const app = express();
-
+app.use(cors());
 app.use(express.json());
 
 function logRequests (request, response, next){
