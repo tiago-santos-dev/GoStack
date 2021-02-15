@@ -47,7 +47,7 @@ app.post('/projects', (request, response) => {
     projects.push(project);
 
 
-    return response.json(project);
+    return response.status(201).json(project);
 });
 
 app.put('/projects/:id', (request, response) => {
